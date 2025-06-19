@@ -1,0 +1,31 @@
+{
+  "name": "recruitment-system",
+  "version": "1.0.0",
+  "description": "AI-based recruitment system with Express backend and FastAPI AI microservices",
+  "main": "index.js",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:frontend"
+  },
+  "keywords": [
+    "recruitment",
+    "ai",
+    "express",
+    "fastapi",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
